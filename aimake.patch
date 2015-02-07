@@ -1,0 +1,10 @@
+8044,8047c8044,8047
+< if ($os_parsed ne 'MSWin32' && $> == 0 && !$opt_install_only) {
+<     die ("Please do not run aimake as root.\n" .
+<          "To install as root, use '-S su' or '-S sudo' as appropriate.");
+< }
+---
+> #if ($os_parsed ne 'MSWin32' && $> == 0 && !$opt_install_only) {
+> #    die ("Please do not run aimake as root.\n" .
+> #         "To install as root, use '-S su' or '-S sudo' as appropriate.");
+> #}
